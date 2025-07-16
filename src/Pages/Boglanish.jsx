@@ -7,7 +7,7 @@ import rasm4 from '../img/rasm3.svg'
 import rasm5 from '../img/rasm4.svg'
 import rasm6 from '../img/rasm5.svg'
 
-import SEO from '../img/Untitled.jpg'
+import SEO from '../img/SEO.png'
 import dizayn from '../img/Untitled1.jpg'
 import sifatli from '../img/Untitled2.jpg'
 import tezkor from '../img/Untitled3.jpg'
@@ -44,7 +44,7 @@ const Boglanish = () => {
   }
 
   return (
-    <section className={`${Element.Container} py-3`}>
+    <section className={`${Element.Container} py-3 mb-20`}>
       <div className="flex flex-col items-center gap-8">
 
         {/* 1 */}
@@ -162,7 +162,7 @@ const Boglanish = () => {
           </h2>
           <div className="grid grid-cols-2 gap-2 max-sm:grid-cols-1">
             <div className='flex items-center gap-3 bg-black/25 px-6 py-6 rounded-lg'>
-              <img className='bg-black/30 px-3 py-3 rounded-md' src={SEO} alt="" />
+              <img className='bg-black/30 px-3 py-3 rounded-lg w-16' src={SEO} alt="" />
               <div>
                 <span className='font-semibold text-lg'>SEO optimizatsiya</span>
                 <p className='text-white/85 w-full max-w-[300px] '>
@@ -171,7 +171,7 @@ const Boglanish = () => {
               </div>
             </div>
             <div className='flex items-center gap-3 bg-black/25 px-6 py-6 rounded-lg'>
-              <img className='bg-black/30 px-3 py-3 rounded-md' src={dizayn} alt="" />
+              <img className='bg-black/30 px-3 py-3 rounded-md w-16' src={dizayn} alt="" />
               <div>
                 <span className='font-semibold text-lg'>Kuchli dizayn</span>
                 <p className='text-white/85 '>
@@ -180,7 +180,7 @@ const Boglanish = () => {
               </div>
             </div>
             <div className='flex items-center gap-3 bg-black/25 px-6 py-6 rounded-lg'>
-              <img className='bg-black/30 px-3 py-3 rounded-md' src={sifatli} alt="" />
+              <img className='bg-black/30 px-3 py-3 rounded-md w-16' src={sifatli} alt="" />
               <div>
                 <span className='font-semibold text-lg'>Sifatli ishlab chiqish</span>
                 <p className='text-white/85 '>
@@ -189,7 +189,7 @@ const Boglanish = () => {
               </div>
             </div>
             <div className='flex items-center gap-3 bg-black/25 px-6 py-6 rounded-lg'>
-              <img className='bg-black/30 px-3 py-3 rounded-md' src={tezkor} alt="" />
+              <img className='bg-black/30 px-3 py-3 rounded-md w-16' src={tezkor} alt="" />
               <div>
                 <span className='font-semibold text-lg'>Tezkor ish jarayoni</span>
                 <p className='text-white/85 '>

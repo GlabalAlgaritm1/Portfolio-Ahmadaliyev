@@ -24,15 +24,15 @@ const Form = () => {
       <div className="fixed bottom-9 right-9 z-50">
         <button
           onClick={() => setIsOpen(true)}
-          className="relative flex items-center justify-center w-14 h-14 rounded-full bg-white focus:outline-none"
+          className="relative flex items-center justify-center w-14 h-14 rounded-full bg-white focus:outline-none max-sm:w-10 max-sm:h-10 max-sm:bottom-10 max-sm:-right-3"
         >
           {/* Pulse layers */}
-          <span className="absolute w-12 h-12 rounded-full bg-white opacity-40 animate-ping"></span>
-          <span className="absolute w-16 h-16 rounded-full bg-black opacity-20 animate-ping delay-200"></span>
-          <span className="absolute w-[70px] h-[70px] rounded-full bg-white opacity-20 animate-pulse delay-200"></span>
+          <span className="absolute w-12 h-12 rounded-full bg-white opacity-40 animate-ping max-sm:w-8 max-sm:h-8"></span>
+          <span className="absolute w-16 h-16 rounded-full bg-black opacity-20 animate-ping delay-200 max-sm:w-10 max-sm:h-10"></span>
+          <span className="absolute w-[70px] h-[70px] rounded-full bg-white opacity-20 animate-pulse delay-200 max-sm:w-12 max-sm:h-12"></span>
           {/* Icon */}
           <svg
-            className="relative w-6 h-6"
+            className="relative w-6 h-6 max-sm:w-4 max-sm:h-4"
             viewBox="0 0 28 29"
             xmlns="http://www.w3.org/2000/svg"
           >

@@ -49,7 +49,7 @@ const Projects = () => {
   }
 
   return (
-    <section className={`${Element.Container} py-3`}>
+    <section className={`${Element.Container} py-3 mb-20`}>
       <h2 className='text-2xl font-semibold border-b rounded-b-lg pb-2 mb-4 w-full max-w-[120px] mx-auto text-center hover:cursor-default hover:text-green-500 transition-all duration-150'>
         Loyihalar
       </h2>

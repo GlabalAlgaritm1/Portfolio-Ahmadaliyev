@@ -2,7 +2,10 @@ import React, { useEffect, useState } from 'react'
 import Logo from '../img/Logo.jpg'
 import { Element } from '../Elements'
 import { Link, NavLink } from 'react-router'
-import rasm1 from '../img/Link.png'
+import rasm1 from '../img/asosiy.png'
+import rasm2 from '../img/boglanish.png'
+import rasm3 from '../img/projects.png'
+
 const Xeader = () => {
   const [visitors, setVisitors] = useState(0)
 
@@ -54,18 +57,15 @@ const Xeader = () => {
         </NavLink>
       </nav>
     </header>
-    <nav className="fixed bottom-0 left-0 w-full bg-blue-400 flex items-center justify-around px-4 py-2 sm:hidden">
+    <nav className="fixed bottom-0 left-0 z-50 w-full bg-blue-400 flex items-center justify-between px-4 py-2 sm:hidden">
     <NavLink to="/" className="px-1 py-1">
       <img className="h-10 w-12 border p-1 rounded-lg" src={rasm1} alt="Asosiy" />
     </NavLink>
     <NavLink to="/Projects" className="px-1 py-1">
-      <img className="h-10 w-12 border p-1 rounded-lg" src={rasm1} alt="Projects" />
+      <img className="h-10 w-12 border p-1 rounded-lg" src={rasm3} alt="Projects" />
     </NavLink>
     <NavLink to="/Boglanish" className="px-1 py-1">
-      <img className="h-10 w-12 border p-1 rounded-lg" src={rasm1} alt="Bog‘lanish" />
-    </NavLink>
-    <NavLink to="/Users" className="px-1 py-1">
-      <img className="h-10 w-12 border p-1 rounded-lg" src={rasm1} alt="Users" />
+      <img className="h-10 w-12 border p-1 rounded-lg" src={rasm2} alt="Bog‘lanish" />
     </NavLink>
   </nav>
     </>
