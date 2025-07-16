@@ -2,10 +2,9 @@ import React, { useState } from 'react'
 import { Element } from '../Elements'
 import Myteam from '../img/Myteam.png'
 import View from '../img/View.png'
-import github from '../img/githubw.png' // Fayl nomi: githubW.png bo‘lishi kerak!
+import github from '../img/github.png' // Fayl nomi: githubW.png bo‘lishi kerak!
 import Linki from '../img/Link.png'
-import X from '../img/x.png'
-import { Link } from 'react-router' // TO‘G‘RI: react-router-dom ishlatish kerak!
+import Twitter from '../img/Twitter2.png'
 import usetitle from '../Components/Usetitle'
 
 const projectsData = [
@@ -106,7 +105,7 @@ const Projects = () => {
               onClick={closeModal}
               className="absolute top-1 right-4 text-black bg-gray-200 hover:bg-red-500 hover:text-white transition px-2 py-1 rounded"
             >
-              <img className='w-7' src={X} alt="ortga" />
+              <img className='w-7' src={Twitter} alt="ortga" />
             </button>
 
             <img src={activeProject.img} alt={activeProject.title} className="w-full rounded mb-4" />
