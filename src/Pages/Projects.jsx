@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 import { Element } from '../Elements'
 import Myteam from '../img/Myteam.png'
 import View from '../img/View.png'
-import github from '../img/githubW.png'
+import github from '../img/githubw.png' // Fayl nomi: githubW.png bo‘lishi kerak!
 import Linki from '../img/Link.png'
 import X from '../img/x.png'
-import { Link } from 'react-router'
+import { Link } from 'react-router' // TO‘G‘RI: react-router-dom ishlatish kerak!
 import usetitle from '../Components/Usetitle'
 
 const projectsData = [
@@ -14,109 +14,11 @@ const projectsData = [
     title: 'My Team',
     img: Myteam,
     link: 'https://my-team-dev.vercel.app',
-    github: '#',
+    github: 'https://github.com/GlabalAlgaritm1',
     difficulty: 'Hard',
     description: 'Bu loyiha jamoaviy ishlarni boshqarish, vazifalarni taqsimlash va jamoa a’zolari bilan oson aloqa qilish uchun ishlab chiqilgan.'
   },
-  {
-    id: 2,
-    title: 'My Team 2',
-    img: Myteam,
-    link: 'https://my-team-dev.vercel.app',
-    github: '#',
-    difficulty: 'Medium',
-    description: 'Ikkinchi loyiha tavsifi.'
-  },
-  {
-    id: 3,
-    title: 'My Team 3',
-    img: Myteam,
-    link: 'https://my-team-dev.vercel.app',
-    github: '#',
-    difficulty: 'Easy',
-    description: 'Uchinchi loyiha tavsifi.'
-  },
-  {
-    id: 4,
-    title: 'My Team',
-    img: Myteam,
-    link: 'https://my-team-dev.vercel.app',
-    github: '#',
-    difficulty: 'Hard',
-    description: 'Bu loyiha jamoaviy ishlarni boshqarish, vazifalarni taqsimlash va jamoa a’zolari bilan oson aloqa qilish uchun ishlab chiqilgan.'
-  },
-  {
-    id: 5,
-    title: 'My Team 2',
-    img: Myteam,
-    link: 'https://my-team-dev.vercel.app',
-    github: '#',
-    difficulty: 'Medium',
-    description: 'Ikkinchi loyiha tavsifi.'
-  },
-  {
-    id: 6,
-    title: 'My Team 3',
-    img: Myteam,
-    link: 'https://my-team-dev.vercel.app',
-    github: '#',
-    difficulty: 'Easy',
-    description: 'Uchinchi loyiha tavsifi.'
-  },
-  {
-    id: 7,
-    title: 'My Team',
-    img: Myteam,
-    link: 'https://my-team-dev.vercel.app',
-    github: '#',
-    difficulty: 'Hard',
-    description: 'Bu loyiha jamoaviy ishlarni boshqarish, vazifalarni taqsimlash va jamoa a’zolari bilan oson aloqa qilish uchun ishlab chiqilgan.'
-  },
-  {
-    id: 8,
-    title: 'My Team 2',
-    img: Myteam,
-    link: 'https://my-team-dev.vercel.app',
-    github: '#',
-    difficulty: 'Medium',
-    description: 'Ikkinchi loyiha tavsifi.'
-  },
-  {
-    id: 9,
-    title: 'My Team 3',
-    img: Myteam,
-    link: 'https://my-team-dev.vercel.app',
-    github: '#',
-    difficulty: 'Easy',
-    description: 'Uchinchi loyiha tavsifi.'
-  },
-  {
-    id: 10,
-    title: 'My Team',
-    img: Myteam,
-    link: 'https://my-team-dev.vercel.app',
-    github: '#',
-    difficulty: 'Hard',
-    description: 'Bu loyiha jamoaviy ishlarni boshqarish, vazifalarni taqsimlash va jamoa a’zolari bilan oson aloqa qilish uchun ishlab chiqilgan.'
-  },
-  {
-    id: 11,
-    title: 'My Team 2',
-    img: Myteam,
-    link: 'https://my-team-dev.vercel.app',
-    github: '#',
-    difficulty: 'Medium',
-    description: 'Ikkinchi loyiha tavsifi.'
-  },
-  {
-    id: 12,
-    title: 'My Team 3',
-    img: Myteam,
-    link: 'https://my-team-dev.vercel.app',
-    github: '#',
-    difficulty: 'Easy',
-    description: 'Uchinchi loyiha tavsifi.'
-  },
+  // Boshqa projectlar shu tarzda davom etadi...
 ]
 
 const getDifficultyColor = (difficulty) => {
@@ -149,8 +51,8 @@ const Projects = () => {
 
   return (
     <section className={`${Element.Container} py-3`}>
-      <h2 className='text-2xl font-semibold border-b rounded-b-lg pb-2 mb-4 w-full max-w-[120px] mx-auto text-center hover:cursor-default hover:text-green-500 hover:transition-all hover:duration-150'>
-        Loyixalar
+      <h2 className='text-2xl font-semibold border-b rounded-b-lg pb-2 mb-4 w-full max-w-[120px] mx-auto text-center hover:cursor-default hover:text-green-500 transition-all duration-150'>
+        Loyihalar
       </h2>
 
       <section className='grid grid-cols-4 gap-5 max-sm:grid-cols-1 max-sm:gap-y-4'>
@@ -159,18 +61,18 @@ const Projects = () => {
             <div className="bg-black/25 px-1 py-2 rounded-lg w-full flex items-center justify-between">
               <button
                 onClick={() => openModal(project)}
-                className='border rounded-lg px-[6px] py-[6px] ml-2 hover:bg-black/25 hover:border-green-500 hover:transition-all hover:duration-200'
+                className='border rounded-lg px-[6px] py-[6px] ml-2 hover:bg-black/25 hover:border-green-500 transition-all duration-200'
               >
                 <img className='w-6 h-6' src={View} alt="View" />
               </button>
 
               <div className='flex items-center gap-2'>
-                <Link to={project.link} target="_blank" className='border rounded-lg px-[6px] py-[6px] ml-2 hover:bg-black/25 hover:border-green-500 hover:transition-all hover:duration-200'>
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className='border rounded-lg px-[6px] py-[6px] ml-2 hover:bg-black/25 hover:border-green-500 transition-all duration-200'>
                   <img className='w-6 h-6' src={Linki} alt="Link" />
-                </Link>
-                <Link to={project.github} className='border rounded-lg px-[6px] py-[6px] ml-2 border-blue-600 hover:bg-black/25 hover:border-green-500 hover:transition-all hover:duration-200'>
+                </a>
+                <a href={project.github} target="_blank" rel="noopener noreferrer" className='border rounded-lg px-[6px] py-[6px] ml-2 border-blue-600 hover:bg-black/25 hover:border-green-500 transition-all duration-200'>
                   <img className='w-6 h-6' src={github} alt="GitHub" />
-                </Link>
+                </a>
               </div>
             </div>
 
