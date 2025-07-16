@@ -24,7 +24,7 @@ const Form = () => {
       <div className="fixed bottom-9 right-9 z-50">
         <button
           onClick={() => setIsOpen(true)}
-          className="relative flex items-center justify-center w-14 h-14 rounded-full bg-white focus:outline-none max-sm:w-10 max-sm:h-10 max-sm:bottom-10 max-sm:-right-3"
+          className="relative flex items-center justify-center w-14 h-14 rounded-full bg-white focus:outline-none max-sm:w-10 max-sm:h-10 max-sm:bottom-10"
         >
           {/* Pulse layers */}
           <span className="absolute w-12 h-12 rounded-full bg-white opacity-40 animate-ping max-sm:w-8 max-sm:h-8"></span>
