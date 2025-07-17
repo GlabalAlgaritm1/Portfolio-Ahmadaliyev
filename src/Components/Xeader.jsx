@@ -50,7 +50,7 @@ const Xeader = () => {
 
         <NavLink to='/Projects' className='border p-1 px-3 rounded-lg font-semibold max-sm:hidden'>
           <span>Projects</span>
-        </NavLink>
+        </NavLink> 
 
         <NavLink to='/Boglanish' className='border p-1 px-3 rounded-lg font-semibold max-sm:hidden'>
           <span>Bog‘lanish</span>
