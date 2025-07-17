@@ -21,7 +21,7 @@ const Boglanish = () => {
   useTitle("Boglanish")
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
-  const [message, setMessage] = useState('')
+  const [message, setMessage] = useState('') 
 
   const handleSubmit = async () => {
     const BOT_TOKEN = '7933237192:AAE9a0fJTlv1LraxYKBsVrPTzbXL_LssQio'

@@ -39,7 +39,7 @@ const Xeader = () => {
       <nav className='flex items-center gap-3 shadow-inner shadow-white p-3 rounded-md'>
 
         <button className='border p-1 px-3 rounded-lg font-semibold max-sm:shadow-sm'>
-          <span>
+          <span> 
             Users: {visitors}
           </span>
         </button>
