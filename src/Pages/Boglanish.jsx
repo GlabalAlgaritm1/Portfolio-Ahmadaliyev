@@ -25,7 +25,7 @@ const Boglanish = () => {
 
   const handleSubmit = async () => {
     const BOT_TOKEN = '7933237192:AAE9a0fJTlv1LraxYKBsVrPTzbXL_LssQio'
-    const CHAT_ID = '7764198922'
+    const CHAT_ID = '7764198922' 
 
     const text = `🟢 Yangi So‘rov\n👤 Ism: ${name}\n📧 Email: ${email}\n💬 Xabar: ${message}`
 
